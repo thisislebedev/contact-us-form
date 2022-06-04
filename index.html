@@ -4,35 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
     <title>contact form</title>
   </head>
   <body>
-    <div class="contact">
-      <form
-        action="https://api.web3forms.com/submit"
-        method="POST"
-        class="form"
-      >
-        <h3 class="heading-3">Hey There!</h3>
-        <span class="paragraph">Send me a message.</span>
-        <input
-          type="hidden"
-          name="access_key"
-          value="9260318d-14f6-4904-a277-d9ff6413d9ae"
-        />
-        <input type="text" name="name" class="name" required />
-        <input type="email" name="email" class="email" required />
-        <textarea name="message" class="message" required></textarea>
-        <input
-          type="hidden"
-          name="redirect"
-          value="https://web3forms.com/success"
-        />
-
-        <button type="submit" class="btn">Send</button>
-      </form>
+    <div class="thank-you">
+      <lottie-player
+        class="lottie"
+        src="https://assets9.lottiefiles.com/packages/lf20_9a2xzfo4.json"
+        background="transparent"
+        speed="1"
+      ></lottie-player>
     </div>
-    <script src="script.js"></script>
+
+    <form class="form-container">
+      <div class="start">
+        <lottie-player
+          src="https://assets8.lottiefiles.com/packages/lf20_pv3vjlpk.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <h1 class="contact">Hey There!</h1>
+      <h2 class="contact">Wish to Subscribe?</h2>
+
+      <label for="email" class="contact">Email Address</label>
+      <input type="text" id="email" class="contact" />
+
+      <p class="contact">
+        Don't worry, we won't hound you with emails like our competitors
+      </p>
+      <a href="#" class="cta contact">Join List</a>
+    </form>
+
+    <h2>Thank You!</h2>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>
